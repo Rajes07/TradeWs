@@ -1,0 +1,21 @@
+2021-07-16 19:54:31 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRADE" not found; SQL statement:
+select * from trade [42102-200]
+2021-07-16 19:54:32 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRADE" not found; SQL statement:
+select * from trade [42102-200]
+2021-07-16 19:54:33 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRADE" not found; SQL statement:
+select * from trade [42102-200]
+2021-07-16 20:05:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'d' (TRADE: ""PRICE"" FLOAT(20) DEFAULT NULL)"; SQL statement:
+INSERT INTO TRADE(SELLER,BUYER,STOCK,PRICE,TRADE_DATE) VALUES('a','b','c','d',CURRENT_DATE) [22018-200]
+2021-07-16 20:19:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "REPLACE[*] INTO TRADE(SELLER,BUYER,STOCK,PRICE,TRADE_DATE) VALUES(?,?,?,?,CURRENT_DATE)"; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE"; SQL statement:
+REPLACE INTO TRADE(SELLER,BUYER,STOCK,PRICE,TRADE_DATE) VALUES(?,?,?,?,CURRENT_DATE) [42001-200]
+2021-07-16 20:40:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "REPLACE[*] INTO TRADE(SELLER,BUYER,STOCK,PRICE,TRADE_DATE) VALUES(?,?,?,?,CURRENT_DATE)"; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE"; SQL statement:
+REPLACE INTO TRADE(SELLER,BUYER,STOCK,PRICE,TRADE_DATE) VALUES(?,?,?,?,CURRENT_DATE) [42001-200]
+2021-07-16 21:29:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO ORDER[*](PARTY,CATEGORY,STOCK,PRICE) VALUES(?,?,?,?)"; expected "identifier"; SQL statement:
+INSERT INTO ORDER(PARTY,CATEGORY,STOCK,PRICE) VALUES(?,?,?,?) [42001-200]
