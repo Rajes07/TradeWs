@@ -83,7 +83,7 @@ public class LeaveMain {
 		System.out.println(bal.updateLeaveBal(leave));
 	}
 	
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws ParseException, LeaveException {
 		int ch;
 		do{
 			System.out.println("O P T I O N S.........."); 
@@ -110,9 +110,11 @@ public class LeaveMain {
 			case 3: 
 				searchLeave();
 				break;
-			case 4:
+			case 4: 
+				deleteLeave();
 				break;
 			case 5:
+				updateLeave();
 				break;
 			case 6: 
 				return;

@@ -21,23 +21,23 @@ public class LeaveDAO {
 		return lstList;
 	} 
 	public LeaveDetails searchLeaveDao(int empId){
-		LeaveDetails result = null; 
-		if(result.getEmpId()==empId){
-			result=result;
-			
-			
+		for(LeaveDetails detail: lstList){
+			if(detail.getEmpId()==empId){
+				return detail;
+			}
 		}
-		return result;
+		return null;
+		
 	}
 
 
 	public String deleteLeave(int empId) {
 		LeaveDetails leave = searchLeaveDao(empId);
 		if(leave!=null){
-			lstList.remove(empId);
-			return"record deleted sucesfully";
+			lstList.remove(leave);
+			
 		}
-		return null;
+		return "record deleted sucesfully";
 	} 
 	
 	public String updateLeave(LeaveDetails leavenew){

@@ -52,12 +52,12 @@ public class LeaveBAL {
 	} 
 	
 	public LeaveDetails searchLeave(int empId){
-		return new LeaveBAL().searchLeave(empId);
+		return new LeaveDAO().searchLeaveDao(empId);
 		
 	}
     public String deleteLeave(int empId){
-    	return new LeaveDAO().deleteLeave( empId);
-    } 
+    	return new LeaveDAO().deleteLeave(empId);
+    	} 
     public String updateLeaveBal(LeaveDetails leave) throws LeaveException{
     	try {
 			if(validateLeave(leave)){
